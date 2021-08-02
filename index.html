@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반응형 리뉴얼 : 아식스 공식 온라인 스토어 - asics.co.kr</title>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.touchSlider.js"></script>
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="css/reset.css" media="all">
+<link rel="stylesheet" href="css/asics_main.css" media="all">
+<style>
+.ts-controls { height: 36px; position:relative; top:-45px; left:0;  z-index:15; overflow: hidden; }
+.ts-prev {display:none;}
+.ts-next {display:none;}
+    
+.ts-paging { width:100%;  height:auto; text-align:center; position:absolute; top:0px; left:0; z-index:10; }
+.ts-paging-btn {display:inline-block; width:10px; height:0; max-height:10px; padding-top:10px; margin-left:7px; border-radius:20px; overflow: hidden;  border:1px solid rgba(76,76,76,0.1); background-color:rgba(225,225,225,0.4); outline:none; }
+.ts-paging-btn:first-child { margin-left: 0; }
+.ts-paging-active { background:rgba(0,0,0,0.5);}
+
+#touchSlider11{clear:both; width:100%; height:auto; margin:0 auto; position:relative; overflow:hidden;}
+#touchSlider11 ul{position:absolute; left:0; top:0; overflow:hidden; width:100%; height:auto;}
+#touchSlider11 ul li{width:100%; height:auto;}
+#touchSlider11 ul li img{width:100%; height:auto; min-height:200px; }
+</style>
+</head>
+<body>
+<div id="header_wrap">
+	<div class="box">
+		<div class="list12">
+			<div class="left_top">
+				<ul>
+					<li><a href="#">KOREA</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">멤버혜택</a></li>
+				</ul>
+			</div><!-- left_top -->
+			<div class="right_top">
+				<ul>
+					<li><a href="#">로그인</a></li>
+					<li class="mo_1"><a href="#">장바구니</a></li>
+					<li><a href="#">검색</a></li>
+				</ul>
+			</div><!-- right_top -->	
+			<div id="mobile_background">
+				<p><img src="images/mobile_bg.jpg" alt="모바일 바탕화면" width="767" height="1151"></p>
+			</div><!-- mobile_background --> 
+		</div><!-- list12 -->
+	</div><!-- box 탑 메뉴  -->
+</div><!-- header_wrap -->
+<div id="header_logo">
+	<div class="box">
+		<div class="list12">
+			<div class="logo_wrap">
+				<p class="logo1"><a href="index.html"><img src="images/logo.png" alt="아식스 네이비 로고" width="110" height="37"></a></p>
+				<p class="logo2"><a href="index.html"><img src="images/logo_white.png" alt="아식스 네이비 로고" width="110" height="37"></a></p>
+			</div><!-- logo_wrap -->
+						
+			<div class="m_menu">
+				<img src="images/icon1.png" alt="햄버거 메뉴" width="43" height="37" class="menu_01">
+				<img src="images/icon5.png" alt="장바구니" width="40" height="35" class="menu_02">
+			</div><!-- m_menu 태블릿, 모바일 -->
+			<div class="m_hidden_menu">
+				<ul>
+					<li><a href="#">남성</a></li>
+					<li><a href="#">여성</a></li>
+					<li><a href="#">키즈</a></li>
+					<li><a href="#">컬렉션</a></li>
+					<li><a href="#">아울렛</a></li>
+					<li><a href="#">뉴스&amp;이벤트</a></li>
+				</ul>
+				<p class="close_btn">X</p>
+			</div><!-- m_hidden_menu 태블릿, 모바일 -->
+		</div>
+	</div><!-- box 로고 / nav  --> 
+</div><!-- header_logo -->
+<div id="nav_menu">
+	<ul class="drop_top">
+		<li class="man sub"><a href="#">남성</a>
+			<ul class="sub1 submenu">
+				<li><a href="#">남성 전체보기</a></li>
+				<li><a href="#">신상품</a></li>
+				<li><a href="#">베스트셀러</a></li>
+				<li class="sub_shoes"><a href="#">신발</a></li>
+				<li class="sub_cloth"><a href="#">의류</a></li>
+				<li class="sub_acc"><a href="#">액세서리</a></li>
+				<li class="sub_sports"><a href="#">스포츠</a></li>
+				<li><a href="#">발 너비(2E/4E)</a></li>
+				<li><a href="#">온라인단독</a></li>
+			</ul>
+		</li>
+		<li class="woman sub"><a href="#">여성</a>
+			<ul class="sub2 submenu">
+				<li><a href="#">여성 전체보기</a></li>
+				<li><a href="#">신상품</a></li>
+				<li><a href="#">베스트셀러</a></li>
+				<li class="sub_shoes"><a href="#">신발</a></li>
+				<li class="sub_cloth"><a href="#">의류</a></li>
+				<li class="sub_acc"><a href="#">액세서리</a></li>
+				<li class="sub_sports"><a href="#">스포츠</a></li>
+				<li><a href="#">발 너비(2E/4E)</a></li>
+				<li><a href="#">온라인단독</a></li>
+			</ul>
+		</li>
+		<li class="kids sub"><a href="#">키즈</a>
+			<ul class="sub3 submenu">
+				<li><a href="#">키즈 전체보기</a></li>
+				<li><a href="#">신상품</a></li>
+				<li><a href="#">베스트셀러</a></li>
+				<li class="sub_shoes"><a href="#">신발</a></li>
+				<li class="sub_cloth"><a href="#">의류</a></li>
+				<li class="sub_acc"><a href="#">액세서리</a></li>
+				<li><a href="#">킥보드 신발 </a></li>
+				<li><a href="#">축구화,풋살화</a></li>
+				<li><a href="#">온라인단독</a></li>
+			</ul>
+		</li>
+		<li class="col"><a href="#">컬렉션</a>
+			<ul class="sub4 submenu">
+				<li><a href="#">키코 스튜디오 큐레이션</a></li>
+				<li><a href="#">조그 100S</a></li>
+				<li><a href="#">JOUETIE 콜라보레이션</a></li>
+				<li><a href="#">트라부코맥스 뉴 컬러</a></li>
+				<li><a href="#">젤 카야노 28</a></li>
+			</ul>
+		</li>
+		<li><a href="#">아울렛</a>
+			<ul class="sub5 submenu">
+				<li><a href="#">아울렛 전체보기</a></li>
+				<li><a href="#">남성</a></li>
+				<li><a href="#">여성</a></li>
+				<li><a href="#">키즈</a></li>				
+			</ul>
+		</li>
+		<li><a href="#">뉴스&amp;이벤트</a>
+			<ul class="sub6 submenu">
+				<li><a href="#">뉴스&amp;이벤트 전체보기</a></li>
+				<li><a href="#">쇼핑 지원금 이벤트</a></li>
+				<li><a href="#">아식스 멤버십 프로그램</a></li>
+				<li><a href="#">FOOT I.D 서비스</a></li>		
+			</ul>
+		</li>
+	</ul>				
+</div>
+
+<div id="touchSlider11">
+    <ul>
+        <li><img src="images/main_bg0.jpg" alt="아식스 x 비비안 웨스트 우드 컬렉션" width="1680" height="800"></li>
+        <li><img src="images/main_bg1.jpg" alt="아식스 x 루이자비아로마 컬렉션" width="1680" height="800"></li>
+        <li><img src="images/main_bg2.jpg" alt="아식스 x 쥬에띠 x 아트모스 걸 컬렉션" width="1680" height="800"></li>
+        <li><img src="images/main_bg3.jpg" alt="아식스 x 비비안웨스트 우드 컬렉션" width="1680" height="800"></li>
+        <li><img src="images/main_bg4.jpg" alt="아식스 x 키코 코스타디노브 큐레이션 컬렉션" width="1680" height="800"></li>
+    </ul>
+</div><!-- touchSlider11 -->
+<script>
+$('#touchSlider11').touchSlider({
+	autoplay: {
+		enable: true,
+		pauseHover: true,
+		addHoverTarget: '',
+		interval: 3500
+	}
+});
+</script> <!-- touchSlider11 -->
+
+<div id="main_product">
+    <div class="box">
+        <div class="list12">
+            <div class="product_wrap1 p_wrap">
+                <a href="#"><img src="images/main_pro2.jpg" alt="아식스 젤 카야노 27 DE 옐로우" width="400" height="400"></a>
+                <ul>
+                    <li><a href="#">아식스 젤 카야노 27 DE <span class="price">270,000원</span></a></li>
+                    <li><a href="#">Vivienne Westwood Collaboration</a></li>
+                    <li>2 컬러</li>
+                </ul>
+                
+            </div><!--product_wrap1 -->         
+           <div class="product_wrap2 p_wrap">
+                <a href="#"><img src="images/main_pro3.jpg" alt="아식스 젤 카야노 27 DE 네이비" width="400" height="400"></a>
+                <ul>
+                    <li><a href="#">아식스 젤 카야노 27 DE <span>270,000원</span></a></li>
+                    <li><a href="#">Vivienne Westwood Collaboration</a></li>
+                    <li>2 컬러</li>
+                </ul>                
+            </div><!--product_wrap2 -->         
+           <div class="product_wrap3 p_wrap">
+               <a href="#"> <img src="images/main_pro1.jpg" alt="아식스 젤 카야노 27 LTX 퍼플" width="400" height="400"></a>
+                 <ul>
+                    <li><a href="#">젤 카야노 27 LTX <span>270,000원</span></a></li>
+                     <li><a href="#">Vivienne Westwood Collaboration</a></li>
+                    <li>3 컬러</li>
+                </ul>
+            </div><!--product_wrap3 -->
+        </div><!-- list10 -->
+    </div><!-- box -->
+</div><!-- main_product -->
+
+
+<div id="main_video_wrap">
+       <video autoplay preload="auto" muted loop  playsinline  poster="images/video_ex.jpg">
+           <source src="video/asics_video.mp4"  type="video/mp4">
+        </video>
+</div><!-- main_video_wrap -->
+
+<div id="weekly_best">
+    <div class="box">
+        <div class="list12">
+            <p>위클리 베스트 </p>
+        </div><!-- list12 -->
+    </div><!-- box -->
+</div><!-- weekly_best -->
+
+<div id="weekly_menu">
+    <div class="box">
+        <div class="list12"> 
+            <div class="w_menu1">  
+                <div>
+                    <img src="images/w_menu1.jpg" alt="남성 신발" width="415" height="415">
+                    <p><a href="#">남성</a></p>
+                </div>
+            </div><!-- w_menu1 -->
+           <div class="w_menu2">
+                    <div>
+                        <img src="images/w_menu2.jpg" alt="여성 신발" width="415" height="415">
+                        <p><a href="#">여성</a></p>
+                    </div>
+                </div><!-- w_menu2 -->
+            <div class="w_menu3">
+                <div>
+                    <img src="images/w_menu3.jpg" alt="" width="415" height="415">
+                    <p><a href="#">키즈</a></p>
+                </div>
+            </div><!-- w_menu3 -->
+            <div class="w_menu4">
+                <div>
+                    <img src="images/w_menu4.jpg" alt="" width="415" height="415">
+                    <p><a href="#">아울렛</a></p>
+                </div>
+            </div><!-- w_menu4 -->            
+        </div><!-- list12 -->
+    </div><!-- box -->
+</div><!-- weekly_menu -->
+
+</body>
+</html>
