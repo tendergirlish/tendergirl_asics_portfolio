@@ -9,6 +9,8 @@
 <script src="js/main.js"></script>
 <link rel="stylesheet" href="css/reset.css" media="all">
 <link rel="stylesheet" href="css/asics_main.css" media="all">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .ts-controls { height: 36px; position:relative; top:-45px; left:0;  z-index:15; overflow: hidden; }
 .ts-prev {display:none;}
@@ -85,7 +87,6 @@
 				<li class="sub_shoes"><a href="#">신발</a>
 					<ul>
 						<li>러닝</li>
-						<li>스포츠스타일</li>
 						<li>테니스</li>
 						<li>트레일러닝</li>
 						<li>워킹</li>
@@ -143,7 +144,6 @@
 				<li class="sub_shoes"><a href="#">신발</a>
 					<ul>
 						<li>러닝</li>
-						<li>스포츠스타일</li>
 						<li>테니스</li>
 						<li>트레일러닝</li>
 						<li>워킹</li>
@@ -462,35 +462,107 @@ $('#touchSlider11').touchSlider({
 </div><!-- bottom_join -->
 
 <footer id="bottom">
-<div id="key_rolling">
-	<div class="news_wrap">
-		<p>NEWS</p>
-		<ul class="left_n">
-			<li id="no1"><a href="#">About ASICS</a></li>
-			<li id="no2"><a href="#">FOOT ID 서비스</a></li>
-			<li id="no3"><a href="#">2021 아식스 서울신문 버추얼 런</a></li>
-			<li id="no4"><a href="#">Earthday Pack</a></li>
-			<li id="5"><a href="#">아식스 코리아 멤버십 프로그램</a></li>
-		</ul><!-- news_wrap -->
-	</div>	
-	<div class="event_wrap">
-		<p>EVENT</p>
-		<ul class="right_e">
-			<li id="no6"><a href="#">핫 썸머! 8월의 특별 혜택</a></li>
-			<li id="no7"><a href="#">배구 응원 이벤트 당첨자 발표</a></li>
-			<li id="no8"><a href="#">여자 배구 VNL 이벤트 당첨자 발표</a></li>
-			<li id="no9"><a href="#">매일 10% 할인쿠폰</a></li>
-			<li id="no10"><a href="#">ASICS QUIZ EVENT</a></li>
-		</ul><!--event_wrap -->
-	</div>
-</div><!-- key_rolling-->
-	
-	
-	
-	
-	
+    <div id="key_rolling">
+        <div class="news_wrap">
+            <p>NEWS <span><i class="material-icons">&#xe316;</i></span></p>
+            <ul class="left_n">
+                <li id="no1"><a href="#">About ASICS</a></li>
+                <li id="no2"><a href="#">FOOT ID 서비스</a></li>
+                <li id="no3"><a href="#">2021 아식스 서울신문 버추얼 런</a></li>
+                <li id="no4"><a href="#">Earthday Pack</a></li>
+                <li id="5"><a href="#">아식스 코리아 멤버십 프로그램</a></li>
+            </ul><!-- news_wrap -->
+        </div>	
+        <div class="event_wrap">
+            <p>EVENT <span><i class="material-icons">&#xe316;</i></span></p>
+            <ul class="right_e">
+                <li id="no6"><a href="#">핫 썸머! 8월의 특별 혜택</a></li>
+                <li id="no7"><a href="#">배구 응원 이벤트 당첨자 발표</a></li>
+                <li id="no8"><a href="#">여자 배구 VNL 이벤트 당첨자 발표</a></li>
+                <li id="no9"><a href="#">매일 10% 할인쿠폰</a></li>
+                <li id="no10"><a href="#">ASICS QUIZ EVENT</a></li>
+            </ul><!-- right_e --> 
+        </div><!--event_wrap -->
+
+        <div class="hot_wrap">
+            <p>HOT <span class="ico_last"><i class="material-icons">&#xe316;</i></span></p>
+            <ul class="right_h">
+                <li id="no11"><a href="#">트라부코 맥스 W</a></li>
+                <li id="no12"><a href="#">[COS] 젤 카야노 28</a></li>
+                <li id="no13"><a href="#">젤 카야노 27 W 플래티넘</a></li>
+                <li id="no14"><a href="#">젤 1090 W</a></li>
+                <li id="no15"><a href="#">메타스피드 스카이 W</a></li>
+            </ul><!--right_h -->
+        </div><!-- hot_wrap -->
+    </div><!-- key_rolling-->
+    <!-- js 추가 desktop --> 
+    <div id ="bottom_body">
+        <div class="b_body_wrap">
+            <h2><img src="images/logo_white.png" alt="asics 로고" width="96" height="32"></h2>        
+            <!-- js 추가 tablet --> 
+            <div class="bottom_nav">
+                <ul>
+                    <li class="about"><a href="#">회사소개</a>
+                            <ul>
+                                <li><a href="#">About ASICS</a></li>
+                            </ul>
+                    </li>
+                    <li class="sitemap"><a href="#">사이트맵</a>
+                        <ul>
+                            <li><a href="#">매장찾기 <span> 사이즈 가이드 </span></a></li>
+                        </ul>
+                    </li>
+                    <li class="center"><a href="#">고객센터</a>
+                        <p><a href="tel:080-929-3535">080-929-3535</a><span class="tablet_display"> <br>운영시간 <br>월 ~ 금 <br>AM 10:00 <br>~ <br>PM 17:00<br><span>* 공휴일 휴무</span></span></p>
+                    </li>
+                    <li class="orderview"><a href="#">주문조회</a>
+                        <ul>
+                            <li><a href="#">Q &amp; A <span>1:1 문의</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="social"><a href="#">SOCIAL</a>
+                        <p><i class="fa fa-facebook-f"></i></p>
+                        <p><i class="fa fa-instagram"></i></p>
+                        <p><i class="fa fa-twitter"></i></p>
+                    </li>
+                </ul>
+            </div><!-- bottom_nav -->
+        <div id="copyright_t">
+          <!-- js 추가 tablet--> 	
+       <p>&copy; 2021 ASICS Korea</p>
+       <p>이용약관</p>
+       <p> 쿠키규정 </p>
+       <p>아식스코리아 개인정보처리방침</p>    
+    </div><!-- copyright_t -->
+    <div id="address_t">
+        <address>        
+            (주) 아식스코리아 <span>│</span> 대표 : 김원무  <span>│</span> 주소: 서울특별시 중구 을지로5길 16 (삼화타워) 15F <span>│</span>  대표 전화 : <span class="tel"><a href="tel:080-929-3535">080-929-3535</a></span> <span>│</span>  고객 상담실 :<span class="tel"><a href="tel:080-929-3535">080-929-3535</a></span>  <span>│</span>
+            사업자등록번호 : 109-86-10809  <span>│</span> 통신판매신고번호 : 2018-서울중구-0740  <span>│</span> E-mail : <span class="email"><a href="mailto:customercare-kr@asics.com">customercare-kr@asics.com</a></span>  <span>│</span> <span class="o_view">사업자정보확인</span>
+        </address>
+    </div><!-- address -->	
+        </div><!-- b_body_wrap -->
+    </div><!-- boottom_body --> 
+
+    <div id="copyright">
+          <!-- js 추가 tablet--> 	
+       <p>&copy; 2021 ASICS Korea</p>
+       <p>이용약관</p>
+       <p> 쿠키규정 </p>
+       <p>아식스코리아 개인정보처리방침</p>    
+    </div><!-- copyright -->
+
+    <div id="address">
+        <address>        
+            (주) 아식스코리아 <span>│</span> 대표 : 김원무  <span>│</span> 주소: 서울특별시 중구 을지로5길 16 (삼화타워) 15F <span>│</span>  대표 전화 : <span class="tel"><a href="tel:080-929-3535">080-929-3535</a></span> <span>│</span>  고객 상담실 :<span class="tel"><a href="tel:080-929-3535">080-929-3535</a></span>  <span>│</span>
+            사업자등록번호 : 109-86-10809  <span>│</span> 통신판매신고번호 : 2018-서울중구-0740  <span>│</span> E-mail : <span class="email"><a href="mailto:customercare-kr@asics.com">customercare-kr@asics.com</a></span>  <span>│</span> <span class="o_view">사업자정보확인</span>
+        </address>
+    </div><!-- address -->	
 </footer><!-- bottom -->
 
+<div id="top_bottom">
+    <p class="top_ico"><a href="#"><i class="material-icons">&#xe316;</i></a></p>
+    <p class="bottom_ico"><a href="#"><i class="material-icons">&#xe313;</i></a></p>
+</div><!-- top_bottom --> 
 
 </body>
 </html>
