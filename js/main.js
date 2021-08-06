@@ -47,8 +47,7 @@ $(document).ready(function(){
     
     //bottom border-bottom 
         $("#key_rolling").after("<p class='border'></p>");
-        $("#bottom_body").after("<p class='border'></p>");
-        $("#copyright").after("<p class='border'></p>");
+
     
     
 //    bottom 키워드 롤링
@@ -85,9 +84,6 @@ $(document).ready(function(){
     });
     
     
-//    tablet js 추가 
-        $(".b_body_wrap > h2").after("<p class='border_t'></p>");
-        $(".copyright").after("<p class='border_t2'></p>");
     
     
     
