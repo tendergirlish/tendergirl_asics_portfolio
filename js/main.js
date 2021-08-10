@@ -1,4 +1,12 @@
 $(document).ready(function(){
+     
+    
+//alert
+    $("#alert").animate({opacity:"1"},1000);
+    $("#alert > div > a ").click(function(){
+        $("#alert").hide();              
+    });
+    
 
     
 // 모바일 햄버거 버튼 click시 히든 메뉴 show 
@@ -45,11 +53,10 @@ $(document).ready(function(){
 	
 		
     
-    //bottom border-bottom 
+//bottom border-bottom 
         $("#key_rolling").after("<p class='border'></p>");
-
     
-    
+        
 //    bottom 키워드 롤링
         var keyrolling1 = setInterval(function(){            
             $(".news_wrap ul li:first").slideUp(function(){            
@@ -71,7 +78,7 @@ $(document).ready(function(){
     
     
 //    top_bottom    
-    var  scrollbtn = setInterval(function(){
+    var  scrollbtn = setInterval(function(){        
         $("#top_bottom").animate({"top":"51%"},1300);
         $("#top_bottom").animate({"top":"50%"},1300);
     });
@@ -79,6 +86,7 @@ $(document).ready(function(){
     $(".top_ico").click(function(){       
         $("html, body").stop().animate({scrollTop:0},1000);
     });        
+    
     $(".bottom_ico").click(function(){       
         $("html, body").stop().animate({scrollTop:8000},1000);
     });
