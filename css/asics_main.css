@@ -177,15 +177,15 @@ body{width:100%; color:#333; font:normal 12px/1.5em nanum,sans-serif;}
 /* full_bg_wrap*/
     #full_bg_wrap{ clear:both; width:100%; height:auto;  margin:0 auto; margin-top:200px;}
 	  
-	#pc_wrap{width:100%; height:1000px; position:relative; cursor:pointer;}
+	#pc_wrap{width:1680px; height:1000px; position:relative; cursor:pointer; margin:0 auto;}
 	#pc_wrap p:first-child{width:100%; height:800px; background:url(../images/jou.jpg) no-repeat center fixed; color:transparent;font-size:0; }
 	#pc_wrap p:last-child{position:absolute; left:50%; bottom:-100px; transform:translate(-50%, 0);}
 	#pc_wrap p:last-child img{transform:rotate(0deg);}
 	  
 /*상품 애니메이션 효과 js */
-	.s_img1{position: absolute; bottom:170px;left:600px; z-index:15;}
+	.s_img1{position: absolute; bottom:170px;left:500px; z-index:15; }
 	.s_img1 img{width:300px; height:auto; transform:rotate(-25deg);}
-	.s_img2{position: absolute; bottom:280px; left:900px; z-index:20;}
+	.s_img2{position: absolute; bottom:280px; left:800px; z-index:20;}
 	.s_img2 img{width:400px; height:auto;transform:rotate(390deg) scaleX(-1);}
 	.s_img3{position: absolute; top:875px; z-index:10;}
 	.s_img3 img{width:600px; height:auto;}
@@ -216,16 +216,17 @@ body{width:100%; color:#333; font:normal 12px/1.5em nanum,sans-serif;}
       
       /* cloth_menu*/
     #cloth_menu{ width:1680px; height:auto; margin:0 auto; margin-top:130px;}
-    .c_wrap{float:left; overflow:hidden; } 
-    .c_wrap img{ width:400px; height:400px;} 
+    .c_wrap{float:left; overflow:hidden; }  
+    .c_wrap img{ width:400px; height:400px; transform:scale(1.0); opacity:1;  transition:all 0.3s;}  
     
     .cloth_menu1{ position: relative; width:400px; height:auto; margin-right:140px; margin-left:90px;}
     .cloth_menu2{ position: relative; width:400px; height:auto; margin-right:140px}
     .cloth_menu3{ position: relative; width:400px; height:auto; margin-right:90px;}
       
-   .c_menu{ width:410px; text-align:center; font-style:italic; font-weight:bold; font-size:27px; position: absolute; bottom:140px; left:0px; z-index:10; letter-spacing:0.1em;  border:1px solid rgba(225,225,225,0);padding:50px; background-color:rgba(255,255,255,0.8); display:none; box-shadow:0px 2px 2px rgba(0,0,0,0.2);  cursor:pointer; color:#444;}
+   .c_menu{ width:100%; height:auto;  text-align:center; font-style:italic; font-weight:bold; font-size:27px; position: absolute; bottom:50%; left:50%; transform:translate(-50%,-50%); z-index:10; color:#444; display:none;}
       
-	.c_wrap:hover p.c_menu{display:block; }
+	.c_wrap:hover p.c_menu{display:block;}
+	.c_wrap:hover img {transform:scale(1.1); opacity:.5;}
       
 	  
 /*top_bottom*/
@@ -322,7 +323,7 @@ body{width:100%; color:#333; font:normal 12px/1.5em nanum,sans-serif;}
 	  
 /*address*/
 	  #address{width:100%; height:auto;}
-	  #address address{width:1100px; height:auto; color:#fff; font-style:normal; margin:0 auto; margin-top:20px; margin-bottom:20px; text-align:center; line-height:1.7em; font-size:13px;}
+	  #address address{width:1100px; height:auto; color:#fff; font-style:normal; margin:0 auto; margin-top:20px; padding-bottom:20px; text-align:center; line-height:1.7em; font-size:13px;}
 	  #address address span{ margin-left:1px; margin-right:1px;}
 	  #address address a{ color:#fff;}	  
 	  
@@ -547,7 +548,7 @@ body{width:100%; color:#333; font:normal 12px/1.5em nanum,sans-serif;}
 	
 	
 /*bottom*/
-    #bottom{width:100%; height:auto; background-color:#011e62; border:1px solid pink; margin-top:-0.5%;}
+    #bottom{width:100%; height:auto; background-color:#011e62;  margin-top:-0.5%;}
 
     #key_rolling{width:90%; height:auto; margin:0 auto; margin:0 auto; overflow:hidden;}	 
     #key_rolling > div{width:50%; height:auto;  float:left; }
@@ -610,7 +611,7 @@ body{width:100%; color:#333; font:normal 12px/1.5em nanum,sans-serif;}
 	
 /*address*/
 	  #address{width:100%; height:auto;}
-	  #address address{width:90%; height:auto; color:#fff; font-style:normal; margin:0 auto; margin-top:2%; margin-bottom:2%; text-align:center; line-height:1.7em; font-size:1em;}
+	  #address address{width:90%; height:auto; color:#fff; font-style:normal; margin:0 auto; margin-top:2%; padding-bottom:2%; text-align:center; line-height:1.7em; font-size:1em;}
 	  #address address span{ margin-left:0.2%; margin-right:0.2%;}
 	  #address address a{ color:#fff;}	
 	
